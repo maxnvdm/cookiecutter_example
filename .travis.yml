@@ -2,10 +2,10 @@
 
 language: python
 python:
-  - 3.8
-  - 3.7
-  - 3.6
-  - 3.5
+    - 3.8
+    - 3.7
+    - 3.6
+    - 3.5
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
@@ -18,12 +18,12 @@ script: tox
 # following command to finish PyPI deployment setup:
 # $ travis encrypt --add deploy.password
 deploy:
-  provider: pypi
-  distributions: sdist bdist_wheel
-  user: maxnvdm
-  password:
-    secure: PLEASE_REPLACE_ME
-  on:
-    tags: true
-    repo: maxnvdm/cookiecutter_example
-    python: 3.8
+    provider: pypi
+    distributions: sdist bdist_wheel
+    user: maxnvdm
+    password:
+        secure: OpZk4jnbOY4cHLXWXS8huC9Z1a9ITbOySOhQ9CLrIrspk9BDMk1gD5QxfBQC0Btuz6OM7glI2AngXC1MrHzqdSULI6hLbQ6sR1KCGo2kD/zxXha407GPCC7rxj6NGhD4L3k4FLw54HSzw7tbTtlEwQfSDUgNUBHXMbYKWps4VLn1Sz5FwVL7YT9ok3R73QM2o6+J6F/+nKgSr8Ikbj+VZ1dCpVE0jT8/3kE8MLCHwhZpdqG2FPkel1W4+Fg59K67qOV/84aWikn02ZJU/waC3F1hgBhCRBKzTjUJt83MU6uFs68mjzJYhjZG2wcJb/dgfPHEI7XUdnB0QGcKBRTT1o9fC0jLsfB6LVxF13T1wI7NRSbFvNd6d+MKrCau0Voc0/o0G8bS6Fo7Njzac6IVtk7kmSIYEAmaQVDq/a4F2X7sX2qJdLaRGUhF0G/Ql07xIW1kRKs+dyxsB1Ck9Qp/yolMeyJFSmsUMPxzBxcv7ujdHZlYzkHqUzOBehjIzalT89FfM5AbmJPpnLBOpyIdEI2AUK1Su2DBYMWlLguHipNG5ANOjhVWxgyz9n9QkQzwJqxqLwBHDQGsZdzmYOTji9BMvhCRGq0+X65DOuJg2uzq39K8mQUHqHrxodirfNq1v0yn99dqxAx+AjNZTgD3pHqO7IbHwd3m6U1ZUayGHTw=
+    on:
+        tags: true
+        repo: maxnvdm/cookiecutter_example
+        python: 3.8
